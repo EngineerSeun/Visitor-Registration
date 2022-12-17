@@ -1,0 +1,85 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+p {
+    color: grey;
+}
+
+ul {
+    color: grey;
+}
+
+ol {
+    color: gray;
+}
+
+.black {
+    color: black;
+}
+
+#red {
+    color: red;
+    font-weight: lighter;
+}
+
+#intro {
+    width: 50%;
+    float: left;
+}
+
+.infoBox {
+    background-color: aliceblue;
+    width: 50%;
+    float: right;
+    margin-top: -180px;
+    margin-bottom: 15px;
+    border: dotted 0.5px grey;
+    border-radius: 5px;
+}
+
+#questions {
+    clear: both;
+    border-top: solid 1px #cccccc;
+}
+
+div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+#standout {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+#confirmation-button {
+    margin-top: 25px;
+}
+
+#validation-box {
+    border: solid 1px grey;
+    display: none;
+
+}
+
+#validation-message {
+    font-style: italic;
+    margin: 0;
+}
+
+.success-box {
+    background-color: #addcb6;
+    position: fixed;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    translate: transform (-50%, -50%);
+}

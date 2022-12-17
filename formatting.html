@@ -3,57 +3,99 @@
 <!-- Start of our HTML code -->
 <html lang="en">
 <!--Document information - Title, description, character set and link to style sheet-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CODING SOLUTIONS ENTERPRISES</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <!--Beginning of the main section of our HTML-->
+
 <body>
-    <!--Image attribute-->
-    <img src="https://i.pinimg.com/564x/8d/b5/f0/8db5f0a41ff31a3bd814f7a5a9f8b197.jpg" height="100" width="100">
-    <p>Welcome to Coding Solutions Enterprises</p>
 
-    <p>Please register your visit using this application</p>
-    
-    <p><strong>Important:</strong> Please have the following information ready:</p>
+    <!--divs divides our codes into different sections-->
+    <div id="info">
+        <!--Image attribute-->
+        <img src="https://i.pinimg.com/564x/8d/b5/f0/8db5f0a41ff31a3bd814f7a5a9f8b197.jpg" height="100" width="100"
+            id="logo">
+        <h2 id="red"><span id="standout">Welcome to</span> Coding Solutions Enterprises&#8482;</h2>
 
-    <!--HTML Lists-->
-    <ul>
-        <li>License plate</li>
-        <li>Parking Bay Number</li>
-        <li>Name of Person You Are Visiting</li>
-    </ul>
+        <p class="black">Please register your visit using this application</p>
+        <!--Adding Links-->
+    </div>
 
-    <!--Checkboxes-->
-    <input type="checkbox">Do you have a vehicle?
+    <div class="infoBox">
+        <p><strong class="underlined">Important:</strong> Please have the following information ready:</p>
 
-    <!--Textbox-->
-    <input type="text">
+        <!--HTML Lists-->
+        <ul>
+            <li>License plate</li>
+            <li>Parking Bay Number</li>
+            <li>Name of Person You Are Visiting</li>
+        </ul>
+    </div>
 
-    <!--Radio buttons-->
-    <p>What type of Vehicle is it?</p>
-    <input type="radio" name="size">Saloon
-    <input type="radio" name="size">SUV
-    <input type="radio" name="size">Hatchback
-     
-    <p>Select a parking bay number</p>
+    <div id="questions">
+        <div>
+            <p>Please enter your name</p>
+            <input id="input-name" type="text">
+        </div>
+        <div>
+            <!--Checkboxes-->
+            <input type="checkbox">Do you have a vehicle?
+            <!--Textbox-->
+            <input id="input-license" type="text">
+        </div>
 
-    <!--Drop-down menus-->
-    <select>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-    </select>
+        <div>
+            <!--Radio buttons-->
+            <p>What type of Vehicle is it?</p>
+            <input type="radio" name="size">Saloon
+            <input type="radio" name="size">SUV
+            <input type="radio" name="size">Hatchback
+        </div>
+        <div>
+            <p>What parking bay are you in?</p>
 
-    <p>Who are you visiting?</p>
+            <!--Drop-down menus-->
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+        <div>
+            <p>Who are you visiting?</p>
 
-    <!--Text Area-->
-    <textarea cols="100" rows="16"></textarea>
-    
-    <!--Submit buttons-->
-    <input type="submit" value="Confirm">
+            <!--Tables-->
+            <table border="1">
+                <tr>
+                    <th width="200">Name</th>
+                    <th width="300">Role</th>
+                </tr>
+                <tr>
+                    <td>Rob</td>
+                    <td>Director</td>
+                </tr>
+                <tr>
+                    <td>Darren</td>
+                    <td>Underling</td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Submit buttons-->
+        <input id="confirmation-button" type="submit" value="Confirm">
+        <div id="validation-box">
+            <p id="validation-message"> Please ensure all information is entered correctly.</p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
